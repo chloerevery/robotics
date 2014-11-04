@@ -1,4 +1,6 @@
-﻿#include "StdAfx.h"
+//basic c++ code for robot function
+
+#include "StdAfx.h"
 #include "Robot.h"
 
 #define _USE_MATH_DEFINES
@@ -959,14 +961,6 @@ void CRobot::ExecuteMission()
 					if( ball_velocity_AB < 0.002 )
 						ball_velocity_AB = 0.0;
 
-					//if( ball_velocity_AB < 0.002 )
-					//{
-					//	SetVelocity( VelocityCommandType::LINEAR_ANGULAR_RADIAN, 0, 0 );
-					//
-					//	if( mission.behavior.controlType == StrategyGUI_BehaviorControlType::Once )
-					//		mission.bComplete = true;
-					//}
-					//else
 					{
 						CPointDouble target_pos = H;
 
